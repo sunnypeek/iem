@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(89, 219, 213);">
+    <div>
+        <header style="border-bottom: 3px solid rgb(150, 150, 150);" class="bg-white dark:bg-gray-900">
+            <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+                <a class="block text-teal-600 dark:text-teal-300" href="index.html">
+                    <span class="sr-only">Home</span>
+                    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg">
+                        <image href="logo/matahari lucu.png" height="24" width="28" />
+                    </svg>
+
+                </a>
+
+                <div class="flex flex-1 items-center justify-end md:justify-between">
+                    <nav aria-label="Global" class="hidden md:block">
+                        <ul class="flex items-center gap-6 text-sm">
+                            <li>
+                                <a class="text-gray-700 font-bold transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                    href="#">
+                                    Tentang
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-700 font-bold transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                    href="rekomendasi.html">
+                                    Rekomendasi
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-700 font-bold transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                    href="#">
+                                    Services
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <div class="flex items-center gap-4">
+                        <div class="sm:flex sm:gap-4">
+                            <a class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 dark:hover:bg-teal-500"
+                                href="#">
+
+                            </a>
+
+                            <a class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                                href="#">
+
+                            </a>
+                        </div>
+
+                        <button
+                            class="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                            id="menu-toggle">
+                            <span class="sr-only">Toggle menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden bg-gray-100 dark:bg-gray-800 p-4">
+                <ul class="flex flex-col gap-4">
+                    <li>
+                        <a class="text-gray-700 dark:text-white" href="#">Tentang</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-700 dark:text-white" href="rekomendasi.html">Rekomendasi</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-700 dark:text-white" href="#">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="flex flex-row justify-center items-center py-20 space-x-20"
+            style="background-color: rgb(89, 219, 213);">
+            <!-- Card 1 -->
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/MAGNETIK.png"
+                    class="absolute inset-0 h-full w-full object-cover opacity-79 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM MAGNETIC</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">KZ x HBB PR2</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            1. Connectors : 3.5mm<br>
+                            2. Line Length : 1.2m<br>
+                            3. Vocalism Principle : 13.2mm Planar Magnetic Driver<br>
+                            4. With Microphone : Yes<br>
+                            5. Sensitivity : 94dB<br>
+                            6. Frequency Response Range : 20-40.000Hz<br>
+                            7. Impedance : 15Ω<br>
+                            8. Housing : Alumunium Alloy<br>
+                            9. With cable: Yes<br>
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform translate-x-0 translate-y-0 group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span
+                                class="relative -2 -current px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP499.000
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/magnetic/Tangzu Zetian Wu Legend.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM MAGNETIC</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">Tangzu Zetian Wu Legend</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            1. UNIT CONFIGURATION: 14.2mm Planar *1 6mm Planar *1<br>
+                            2. SENSITIVITY: 106.5 db @1khz<br>
+                            3. IMPEDANCE: 12.5 Ω<br>
+                            4. DISTORTION RATE: = 3%@1kHz<br>
+                            5. FREQUENCY RANGE: 20hz-20khz<br>
+                            6. CABLE MATERIAL: 4.4 mm 5N LCOFC litz shielding<br>
+                            7. CABLE LENGTH: 1.2m<br>
+                            8. SOCKET INTERFACE: 2 Pin 0.78<br>
+                            9. BASS PROFILE<br>
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span class="relative px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP4.559.000
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/magnetic/Kinera Celest Plutus Beast.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM MAGNETIC</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">Kinera Celest Plutus Beast</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            Drivers: 12.5mm planar magnetic + multi-layer piezoelectric ceramic
+                            Impedance: 14Ω ±15% (@1kHz)
+                            Sensitivity: 118dB/Vrms (@1kHz)
+                            Frequency Response: 8Hz–40kHz
+                            Cable: 732-core mixed oxygen-free copper & silver-plated Litz
+                            Connectors: 0.78mm 2-pin
+                            Plugs: Interchangeable 3.5mm single-ended & 4.4mm balanced
+
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span class="relative px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP1.468.500
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center items-center py-20 space-x-20"
+            style="background-color: rgb(89, 219, 213);">
+            <!-- Card 2 -->
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/hybrid/KIWI EARS QUARTET.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-79 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM MAGNETIC</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">>SIMGOT ET142</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            Drivers: 12.5mm planar magnetic + multi-layer piezoelectric ceramic
+                            Impedance: 14Ω ±15% (@1kHz)
+                            Sensitivity: 118dB/Vrms (@1kHz)
+                            Frequency Response: 8Hz–40kHz
+                            Cable: 732-core mixed oxygen-free copper & silver-plated Litz
+                            Connectors: 0.78mm 2-pin
+                            Plugs: Interchangeable 3.5mm single-ended & 4.4mm balanced
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform translate-x-0 translate-y-0 group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span
+                                class="relative -2 -current px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP3.749.000
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

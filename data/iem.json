@@ -1,0 +1,646 @@
+[
+    {
+        "name": "TRN BA15 15",
+        "type": "balance",
+        "price": "RP2.500.000",
+        "image": "logo/balance.jpg",
+        "profile" : "trable",
+        "impedance" : 34,
+        "specs": [
+            "Impedance: 20Ω",
+            "Earphone sensitivity: 100dB/mW",
+            "Frequency range: 20–20000Hz",
+            "Interface: 3.5mm Gilded",
+            "Plug Type: 3.5mm",
+            "Cable Length: 1.2m ±3mm",
+            "Color: Black, Silver",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "KZ EDA",
+        "type": "balance",
+        "price": "RP134.830",
+        "image": "logo/KZ EDA balance.png",
+        "profile" : "netral",
+        "impedance" : 34,
+        "specs": [
+            "Impedance: 34Ω",
+            "Earphone Sensitivity: 112.5dB",
+            "Frequency Response: 20–40.000Hz",
+            "Plug Type: 3.5mm",
+            "Pin Type: 2 Pin 0.75m Type C",
+            "Cable length: 125±5cm",
+            "Wearing Type: In Ear",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "KZ SAGA",
+        "type": "balance",
+        "price": "RP207.000",
+        "image": "logo/kz-saga-balance.jpg",
+        "profile" : "netral",
+        "impedance" : 23,
+        "specs": [
+            "Impedance: 23",
+            "Earphone Sensitivity: 108 dB",
+            "Frequency Response: 20–40.000Hz",
+            "Jack: 3.5 mm L‑shape",
+            "Pin Type: 0.75 mm 2‑pin, gold‑plated",
+            "Cable length: 120 ± 5 cm",
+            "Wearing Type: In Ear",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "KZ Vader",
+        "type": "balance",
+        "price": "RP303.000",
+        "image": "logo/kz-vader balance.jpg",
+        "profile" : "netral",
+        "impedance" : 15,
+        "specs": [
+            "Driver: 3 x Super Linear 8mm",
+            "Konektor: Jack 3.5mm",
+            "Panjang Kabel: 1205cm",
+            "Tipe Pin: 0.75mm QDC",
+            "Microphone: Ya",
+            "Frekuensi Respon: 20-40.000 Hz",
+            "Sensitivitas: 101 - 103 dB",
+            "Impedansi: 15-20",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "KZ ASF 10BA",
+        "type": "balance",
+        "price": "RP700.000",
+        "image": "logo/KZ ASF 10BA balance.jpg",
+        "profile" : "vocal",
+        "impedance" : 18,
+        "specs": [
+            "Impedance: 18Ω",
+            "Sensitivity: 105dB/mW",
+            "Frequency range: 10-40000Hz",
+            "Plug: 3.5mm",
+            "Interface: 2Pin 0.75mm gold-plated",
+            "Driver Configurations: -22955s",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "TRN V30",
+        "type": "balance",
+        "price": "RP232.000",
+        "image": "logo/trn-v30. balance.jpg",
+        "profile" : "bass",
+        "impedance" : 20,
+        "specs": [
+            "Model number: V30",
+            "Transducer type: Hybrid In-ear monitor",
+            "Frequency response: 20-20000Hz",
+            "Sensitivity: 99dB",
+            "Impendence: 20Ω",
+            "Line length: 1.25m ± 5cm",
+            "Plug type: 3.5mm",
+            "Connector type: 0.75mm",
+            "Weight: 20g"
+        ]
+    },
+    {
+        "name": "Stagg IEM SPM435",
+        "type": "balance",
+        "price": "RP890.000",
+        "image": "logo/stagg_spm-435 balance.jpg",
+        "profile" : "netral",
+        "impedance" : 30,
+        "specs": [
+            "Transparent Finish",
+            "Frequency range: 20 Hz – 40 kHz",
+            "Sensitivity: 108 db/mW",
+            "Impedance: 30 ohms",
+            "Plug: 3.5 mm (1/8″) mini jack",
+            "Cable length: 1.2 metre (4′)",
+            "Weight: 20 g (0.04 lb)",
+            "Included: EVA foam case"
+        ]
+    },
+    {
+        "name": "KZ AS16 Pro",
+        "type": "balance",
+        "price": "RP675.000",
+        "image": "logo/kz-as16-pro balance1.jpg",        
+        "profile" : "vocal",
+        "impedance" : 18,
+        "specs": [
+            "Nomor Model: AS16 PRO",
+            "Prinsip Vokalisme: Balance",
+            "Gaya: Di telinga",
+            "Panjang Garis: 1.2mm",
+            "Diameter steker: 3.5mm",
+            "Sensitivitas: 114dB±3dB",
+            "Konektor: 3.5mm",
+            "Resistansi: 18ΩΩ",
+            "Frekuensi: 20-40000HZ"
+        ]
+    },
+    {
+        "name": "SGOR VENUS",
+        "type": "balance",
+        "price": "RP139.900",
+        "image": "logo/SGOR VENUS balance.jpg",
+        "profile" : "bass",
+        "impedance" : 32,
+        "specs": [
+            "Connectors: 3.5mm",
+            "Line Length: 1.2m",
+            "Vocalism Principle: 10 mm",
+            "With Microphone: NO",
+            "Sensitivity: 110dB",
+            "Frequency Response Range: 7-45.000Hz",
+            "Resistance: 32Ω",
+            "Housing: Poly Carbonate & resin"
+        ]
+    },
+    {
+        "name": "KZ D-FI DFI",
+        "type": "balance",
+        "price": "RP214.900",
+        "image": "logo/KZ D-FI DFI balance.jpg",        
+        "profile" : "netral",
+        "impedance" : 23,
+        "specs": [
+            "Product Name: KZ D-Fi",
+            "Driver: 10mm Dynamic Driver",
+            "Plug Type: Jack 3.5mm",
+            "Cable Length: 120±5cm",
+            "Pin Type: 0.75mm QDC",
+            "With Microphone: Yes",
+            "Sensitivity: 110±3dB",
+            "Frequency Response Range: 7hz-45.000Hz",
+            "Impedance: 23.5Ω Standard Version, 29Ω~48Ω Tuning Version"
+        ]
+    },
+    {
+        "name": "7KZ Merga",
+        "type": "dynamic",
+        "price": "RP159.900",
+        "image": "logo/dynamic.png",
+        "profile" : "bass",
+        "impedance" : 33,
+        "specs": [
+            "Driver: 1 x 8mm Dynamic Driver | 1x 10mm Dynamic Driver",
+            "Konektor: Jack 3.5mm",
+            "Panjang Kabel: 120±5cm",
+            "Tipe Pin: 0.75mm QDC",
+            "Microphone: Ya",
+            "Frekuensi Respon: 20-40.000 Hz",
+            "Sensitivitas: 104 dB",
+            "Impedansi: 33Ω",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "7HZ x Crinacle Zero 2",
+        "type": "dynamic",
+        "price": "RP207.000",
+        "image": "logo/dynamicL/7HZ x Crinacle Zero 2.jpg",
+        "profile" : "bass",
+        "impedance" : 32,
+        "specs": [
+            "Driver: 10mm Dynamic Driver",
+            "Impedance: >32ohm",
+            "Sound Pressure Level: 108dB/V@1kHz",
+            "THD: Frequency Response: 10-20000Hz",
+            "Pin Type: 0.78m 2 Pin",
+            "Wired Connectivity: 3.5mm",
+            "Microphone: No",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "Tanchjim Bunny DMT4",
+        "type": "dynamic",
+        "price": "RP319.000",
+        "image": "logo/dynamicL/Tanchjim Bunny DMT4.jpg",
+        "profile" : "netral",
+        "impedance" : 30,
+        "specs": [
+            "Drive unit: double-chamber dynamic driver",
+            "Dynamic driver technology: DMT 4 Ultra",
+            "Waveguide technology: Low-distortion waveguide cover technology",
+            "Total harmonic distortion (THD): 0.05% @1kHz 94dB",
+            "Impedance: 30 Ohm±10%",
+            "Sensitivity: 123 dB/Vrms",
+            "Frequency response range: 8-48 kHz",
+            "Wire specification: 0.78 2pin",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "Truthear Gate 11mm",
+        "type": "dynamic",
+        "price": "RP325.000",
+        "image": "logo/dynamicL/Truthear Gate 11mm.jpg",
+        "profile" : "netral",
+        "impedance" : 28,
+        "specs": [
+            "Driver: 10mm Dynamic Driver",
+            "Diaphragm Material: Carbon LCP Dome Composite Ultra-thin PU Diaphragm",
+            "Impedance: 28Ω±15%@1kHz",
+            "Sensitivity: 122dB/Vrms@1KHz",
+            "Distortion: THD≤1%@1kHz (94dB)",
+            "Frequency : 10-45kHz (IEC61094)",
+            "Effective Frequency : 20-20KHz (IEC60318-4, -3dB)",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "Moondrop MAY",
+        "type": "dynamic",
+        "price": "RP1.010.000",
+        "image": "logo/dynamicL/Moondrop MAY.jpg",
+        "profile" : "vocal",
+        "impedance" : 30,
+        "specs": [
+            "Fully Balanced HiFi",
+            "Driver: 10mm Sapphire Dynamic",
+            "Impedance: 30±15% (@1kHz)",
+            "Sensitivity: 120dB/Vrms(@1kHz)",
+            "THD: THD@1kHzs≤0.05%",
+            "Frequency: 7Hz-39kHz",
+            "Effective Frequency: 20Hz-20kHz",
+            "Earphone Jack: 0.78-2pin",
+            "Cable Plug: USB-C",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "iBasso JR. GELATO",
+        "type": "dynamic",
+        "price": "RP319.000",
+        "image": "logo/dynamicL/iBasso JR. GELATO.png",
+        "profile" : "vocal",
+        "impedance" : 30,
+        "specs": [
+            "Drive unit: double-chamber dynamic driver",
+            "Dynamic driver technology: DMT 4 Ultra",
+            "Waveguide technology: Low-distortion waveguide cover technology",
+            "Total harmonic distortion (THD): 0.05% @1kHz 94dB",
+            "Impedance: 30 Ohm±10%",
+            "Sensitivity: 123 dB/Vrms",
+            "Frequency response range: 8-48 kHz",
+            "Wire specification: 0.78 2pin",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "CVJ Demon",
+        "type": "dynamic",
+        "price": "RP170.000",
+        "image": "logo/dynamicL/CVJ Demon.png",
+        "profile" : "vocal",
+        "impedance" : 22,
+        "specs": [
+            "Impedance: 22Ω 110dB/mW",
+            "Frequency range: 20-20000Hz",
+            "PlugType: 3.5mm L Plug",
+            "Cable Length: 1.25m",
+            "Color: Silver/Gold",
+            "Whether with cable: Yes",
+            "Earphone interface: 2Pin Interface",
+            "Whether with mic: Optional",
+            "Whether can replacement cable: Yes",
+            "Driver unit: 1DD Dynamic Monitors unit",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "STA-Pro",
+        "type": "dynamic",
+        "price": "RP725.000",
+        "image": "logo/dynamicL/STA-Pro.jpg",
+        "profile" : "netral",
+        "impedance" : 18,
+        "specs": [
+            "Driver: 10mm Dual-Magnetic Composite Diaphragm DD + 6mm Composite Diaphragm DD Unit",
+            "Impedance: 22Ω",
+            "Sensitivity: 108dB",
+            "Frequency Response Range: 10~30kHz",
+            "Driver: 10mm Dual-Magnetic",
+            "Impedance: 18Ω",
+            "Sensitivity: 113dB",
+            "Frequency Response Range: 10~30kHz",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "Mezone HS-03",
+        "type": "dynamic",
+        "price": "RP289.000",
+        "image": "logo/dynamicL/Mezone HS-03.jpg",
+        "profile" : "bass",
+        "impedance" : 17,
+        "specs": [
+            "Sensitivity: 98+/-3db / 1kHz",
+            "Impedance: 16 ohm",
+            "Frequency Response: 20Hz-20kHz",
+            "Drive Unit: 9mm + 9mm Dual Speaker",
+            "Plug Type: 3.5mm",
+            "Pin Type : 0.75mm",
+            "Features: Universal, In-Ear, Stereo, with Microphone",
+            "Cable Length: 1.2m (Approx.)",
+            "Cable: Detachable"
+        ]
+    },
+    {
+        "name": "TruthEar x Crinacle Zero",
+        "type": "dynamic",
+        "price": "RP880.000",
+        "image": "logo/dynamicL/TruthEar x Crinacle Zero.png",
+        "profile" : "netral",
+        "impedance" : 17,
+        "specs": [
+            "Diaphragm Material : PU + LCP composite diaphragm",
+            "THD : THD@1kHz≤1%",
+            "Sensitivity : 117.5dB/Vrms (@1kHz)",
+            "Impedance : 17.5Ω±15% (@1kHz)",
+            "Frequency Response : 20Hz - 40500Hz",
+            "Cable : Oxygen Free Silver Plated",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "TRN ST7",
+        "type": "hybrid",
+        "price": "RP445.000",
+        "image": "logo/hybrid2.png",
+        "profile" : "netral",
+        "impedance" : 30,
+        "specs": [
+            "Frequency response: 20Hz-20kHz",
+            "Sensitivity: 112dB",
+            "Impedance: 30Ω",
+            "Jack type: 3.5mm",
+            "Wear: Earhook",
+            "Connector type: 2Pin S / QDC",
+            "Cable length: 1.2m±3cm",
+            "Weight: ~4.9g+10g",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "NICEHCK DB3",
+        "type": "hybrid",
+        "price": "RP225.000",
+        "image": "logo/hybrid/NICEHCK DB3.jpg",
+        "profile" : "netral",
+        "impedance" : 16,
+        "specs": [
+            "Driver: Hybrid 3 Driver",
+            "Impedance: 16Ω",
+            "Sensitivitas: 106dB/mW",
+            "Rentang Frekuensi: 20Hz – 22kHz",
+            "Panjang Kabel: 1.2m ± 3cm",
+            "Jenis Konektor: 0.78mm 2-pin (dapat dilepas)",
+            "Jenis Plug: 3.5mm L-shape gold-plated",
+            "Warna: Hitam, Biru",
+            "Dengan Mic: Opsional",
+            "Kabel Dapat Diganti: Ya"
+        ]
+    },
+    {
+        "name": "KZ EDC",
+        "type": "hybrid",
+        "price": "RP69.000",
+        "image": "logo/hybrid/KZ EDC.jpg",
+        "profile" : "bass",
+        "impedance" : 35,
+        "specs": [
+            "Weight : 22.15g",
+            "Frequency : 20-40000Hz",
+            "Sensitivity : 95dB",
+            "Plug diameter : 3.5mm",
+            "Driver diameter : 10mm",
+            "Impedance : 35Ω",
+            "Earphone shell material : Plastic",
+            "Cable : Oxygen Free Copper flat cable",
+            "Cable length : 120cm",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "KIWI EARS QUARTET",
+        "type": "hybrid",
+        "price": "RP159.900",
+        "image": "logo/hybrid/KIWI EARS QUARTET.jpg",
+        "profile" : "bass",
+        "impedance" : 32,
+        "specs": [
+            "Drivers: 10mm Dynamic Drivers (x2), Custom Balanced Armatures (x2)",
+            "Frequency Response: 20Hz-20kHz",
+            "Sensitivity: 110db SPL/mW",
+            "Impedance: 32Ω",
+            "Earphone Material: Medical-grade resin",
+            "Cable Material: High-quality oxygen-free silver-plated copper cable",
+            "Connector: 0.78mm 2-pin",
+            "Cable Length: 1.2m ± 5%",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "CCA Rhapsody",
+        "type": "hybrid",
+        "price": "RP519.900",
+        "image": "logo/hybrid/CCA Rhapsody.png",
+        "profile" : "bass",
+        "impedance" : 15,
+        "specs": [
+            "Driver: 2 x 8mm High Performance DD + 4 BA",
+            "Konektor: Jack 3.5mm",
+            "Panjang Kabel: 120±5cm",
+            "Tipe Pin: 0.75mm QDC",
+            "Microphone: Ya",
+            "Frekuensi Respon: 20-40.000Hz",
+            "Sensitivitas: 102dB±3dB",
+            "Impedance: 15Ω-20Ω",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "Tangzu FU DU FUDU",
+        "type": "hybrid",
+        "price": "RP1.038.288",
+        "image": "logo/hybrid/Tangzu FU DU FUDU.png",
+        "profile" : "netral",
+        "impedance" : 16,
+        "specs": [
+            "1 Dynamic Driver + 2 Balanced Armature",
+            "Driver Spec: 10 mm DD + 2 Balance Armature",
+            "Distortion Rate: ≤1% 1kHz",
+            "Sensitivity: 106db ±≤1db 1kHz",
+            "Impedence: 16Ω",
+            "FR range: 20 Hz - 20 kHz",
+            "Cable Type: 25*0 05 Silver plated",
+            "Cable Length: 1.25 m",
+            "Interface: 0.78 2- PIN",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "TruthEar Nova",
+        "type": "hybrid",
+        "price": "RP574.750",
+        "image": "logo/hybrid/TruthEar Nova.png",
+        "profile" : "netral",
+        "impedance" : 16,
+        "specs": [
+            "Driver: 10mm dual magnetic circuit dual cavity dynamic driver",
+            "Diaphragm: double-sided vapor",
+            "Impedance: 16Ω±15%",
+            "Sensitivity: 126dB/Vrms",
+            "Frequency response: 10Hz-50kHz",
+            "Effective frequency response: 20Hz-20kHz",
+            "Connector: 2pin 0.78mm",
+            "Cable: high-purity OFC silver-plated cable",
+            "Plug: 3.5mm",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "SIMGOT EW200",
+        "type": "hybrid",
+        "price": "RP519.900",
+        "image": "logo/hybrid/SIMGOT EW200.png",
+        "profile" : "netral",
+        "impedance" : 14,
+        "specs": [
+            "Impedence: 14.8Ω ±15% @1kHz",
+            "Sensitivitas: 123dB/Vrms @1kHz",
+            "Harmonic Distortion (THD): ≤1% @1kHz (94dB)",
+            "Respons Frekuensi: 8Hz – 40kHz (IEC61094, Free Field)",
+            "Respons Frekuensi Efektif: 20Hz – 20kHz (IEC60318-4, -3dB)",
+            "Shell: Resin medis cetak 3D dengan faceplate dekoratif",
+            "Bobot Earphone: 5.6g (per sisi, tanpa eartips)",
+            "Kabel: 4-strand (448-core)",
+            "Konektor: 0.78mm 2-pin (CIEM)",
+            "Plug: 3.5mm single-ended",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "TRN VX Pro Plus",
+        "type": "hybrid",
+        "price": "RP992.000",
+        "image": "logo/hybrid/TRN VX Pro Plus.png",
+        "profile" : "netral",
+        "impedance" : 32,
+        "specs": [
+            "Transducer type: Hybrid in-ear monitors",
+            "Frequency response: 7Hz-40000Hz",
+            "Impedance: 32Ω",
+            "Sensitivity: 106dB",
+            "Connector type: 2Pin",
+            "Jack type: 3.5mm",
+            "Weight: 13g+26g (Earphone + cable)",
+            "Cable length: 1.2m±3cm",
+            "Colors: Pearl Black, Flowing Silver",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "SGOR Luna",
+        "type": "hybrid",
+        "price": "RP699.000",
+        "image": "logo/hybrid/SGOR Luna.png",
+        "profile" : "bass",
+        "impedance" : 27,
+        "specs": [
+            "Sensitivity: 96dB/mW",
+            "Frequency Response: 7Hz - 40kHz",
+            "Impedance: 27Ω ±5%",
+            "Plug Type: 3.5mm",
+            "Pin Type: 0.78mm",
+            "Cable Length: 120cm ±5cm",
+            "Weight: 37g ±5%",
+            "Driver Unit: Hybrid Technology",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "KZ x HBB PR2",
+        "type": "magnetic",
+        "price": "RP499.000",
+        "image": "logo/MAGNETIK.png",
+        "profile" : "trable",
+        "impedance" : 15,
+        "specs": [
+            "Connectors: 3.5mm",
+            "Line Length: 1.2m",
+            "Vocalism Principle: 13.2mm Planar Magnetic Driver",
+            "With Microphone: Yes",
+            "Sensitivity: 94dB",
+            "Frequency Response Range: 20-40.000Hz",
+            "Impedance: 15Ω",
+            "Housing: Alumunium Alloy",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "Tangzu Zetian Wu Legend",
+        "type": "magnetic",
+        "price": "RP4.559.000",
+        "image": "logo/magnetic/Tangzu Zetian Wu Legend.jpg",
+        "profile" : "trable",
+        "impedance" : 12,
+        "specs": [
+            "UNIT CONFIGURATION: 14.2mm Planar *1 6mm Planar *1",
+            "SENSITIVITY: 106.5 db @1khz",
+            "IMPEDANCE: 12.5 Ω",
+            "DISTORTION RATE: ≤ 3%@1kHz",
+            "FREQUENCY RANGE: 20hz-20khz",
+            "CABLE MATERIAL: 4.4 mm 5N LCOFC litz shielding",
+            "CABLE LENGTH: 1.2m",
+            "SOCKET INTERFACE: 2 Pin 0.78",
+            "vocal PROFILE",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "Kinera Celest Plutus Beast",
+        "type": "magnetic",
+        "price": "RP1.468.500",
+        "image": "logo/magnetic/Kinera Celest Plutus Beast.jpg",
+        "profile" : "bass",
+        "impedance" : 14,
+        "specs": [
+            "Drivers: 12.5mm planar magnetic + multi-layer piezoelectric ceramic",
+            "Impedance: 14Ω ±15% (@1kHz)",
+            "Sensitivity: 118dB/Vrms (@1kHz)",
+            "Frequency Response: 8Hz–40kHz",
+            "Cable: 732-core mixed oxygen-free copper & silver-plated Litz",
+            "Connectors: 0.78mm 2-pin",
+            "Plugs: Interchangeable 3.5mm single-ended & 4.4mm balanced",
+            "With cable: Yes"
+        ]
+    },
+    {
+        "name": "SIMGOT ET142",
+        "type": "magnetic",
+        "price": "RP3.749.000",
+        "image": "logo/hybrid/KIWI EARS QUARTET.jpg",
+        "profile" : "netral",
+        "impedance" : 14,
+        "specs": [
+            "Drivers: 12.5mm planar magnetic + multi-layer piezoelectric ceramic",
+            "Impedance: 14Ω ±15% (@1kHz)",
+            "Sensitivity: 118dB/Vrms (@1kHz)",
+            "Frequency Response: 8Hz–40kHz",
+            "Cable: 732-core mixed oxygen-free copper & silver-plated Litz",
+            "Connectors: 0.78mm 2-pin",
+            "Plugs: Interchangeable 3.5mm single-ended & 4.4mm balanced",
+            "With cable: Yes"
+        ]
+    }
+]

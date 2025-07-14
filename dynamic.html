@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(89, 219, 213);">
+    <div>
+        <header class="bg-white dark:bg-gray-900">
+            <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+                <a class="block text-teal-600 dark:text-teal-300" href="index.html">
+                    <span class="sr-only">Home</span>
+                    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg">
+                        <image href="logo/matahari lucu.png" height="24" width="28" />
+                    </svg>
+
+                </a>
+
+                <div class="flex flex-1 items-center justify-end md:justify-between">
+                    <nav aria-label="Global" class="hidden md:block">
+                        <ul class="flex items-center gap-6 text-sm">
+                            <li>
+                                <a class="text-gray-700 font-bold transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                    href="#">
+                                    Tentang
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-700 font-bold transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                    href="rekomendasi.html">
+                                    Rekomendasi
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-gray-700 font-bold transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                                    href="#">
+                                    Services
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <div class="flex items-center gap-4">
+                        <div class="sm:flex sm:gap-4">
+                            <a class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 dark:hover:bg-teal-500"
+                                href="#">
+
+                            </a>
+
+                            <a class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                                href="#">
+
+                            </a>
+                        </div>
+
+                        <button
+                            class="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                            id="menu-toggle">
+                            <span class="sr-only">Toggle menu</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden bg-gray-100 dark:bg-gray-800 p-4">
+                <ul class="flex flex-col gap-4">
+                    <li>
+                        <a class="text-gray-700 dark:text-white" href="#">Tentang</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-700 dark:text-white" href="rekomendasi.html">Rekomendasi</a>
+                    </li>
+                    <li>
+                        <a class="text-gray-700 dark:text-white" href="#">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="flex flex-row justify-center items-center py-20 space-x-20"
+            style="background-color: rgb(89, 219, 213);">
+            <!-- Card 1 -->
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/dynamic.png"
+                    class="absolute inset-0 h-full w-full object-cover opacity-79 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM DYNAMIC</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">7KZ Merga</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            1. Driver: 1 x 8mm Dynamic Driver | 1x 10mm Dynamic Driver</br>
+                            2. Konektor: Jack 3.5mm</br>
+                            3. Panjang Kabel: 120±5cm</br>
+                            4. Tipe Pin: 0.75mm QDC</br>
+                            5. Microphone: Ya</br>
+                            6. Frekuensi Respon: 20-40.000 Hz</br>
+                            7. Sensitivitas: 104 dB</br>
+                            8. Impedansi: 33Ω</br>
+                            9. With cable: Yes
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform translate-x-0 translate-y-0 group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span
+                                class="relative -2 -current px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP159.900
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/dynamicL/7HZ x Crinacle Zero 2.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM BALANCE</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">7HZ x Crinacle Zero 2 </p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            1. Driver: 10mm Dynamic Driver</br>
+                            2. Impedance: >32ohm</br>
+                            3. Sound Pressure Level 108dB/V@1kHz</br>
+                            4. THD: Frequency Response: 10-20000Hz</br>
+                            5. Pin Type: 0.78m 2 Pin</br>
+                            6. Wired Connectivity: 3.5mm<br>
+                            7. Microphone: No<br>
+                            8. With cable: Yes
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span class="relative px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP207.000
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/dynamicL/Tanchjim Bunny DMT4.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM BALANCE</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">Tanchjim Bunny DMT4</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            1. Drive unit: double-chamber dynamic driver<br>
+                            2. Dynamic driver technology: DMT 4 Ultra<br>
+                            3. Waveguide technology: Low-distortion waveguide cover technology<br>
+                            4. Total harmonic distortion (THD): 0.05% @1kHz 94dB<br>
+                            5. Impedance: 30 Ohm±10%<br>
+                            6. Sensitivity: 123 dB/Vrms<br>
+                            7. Frequency response range: 8-48 kHz<br>
+                            8. Wire specification: 0.78 2pin<br>
+                            9. With cable: Yes<br>
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span class="relative px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP319.000
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center items-center py-20 space-x-20"
+            style="background-color: rgb(89, 219, 213);">
+            <!-- Card 4 -->
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/dynamicL/Truthear Gate 11mm.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-79 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM DYNAMIC</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">Truthear Gate 11mm</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            1. Driver: 10mm Dynamic Driver<br>
+                            2. Diaphragm Material: Carbon LCP Dome Composite Ultra-thin PU Diaphragm<br>
+                            3. Impedance: 28Ω±15%@1kHz<br>
+                            4. Sensitivity: 122dB/Vrms@1KHz<br>
+                            5. Distortion: THD≤1%@1kHz (94dB)<br>
+                            6. Frequency : 10-45kHz (IEC61094)<br>
+                            7. Effective Frequency : 20-20KHz (IEC60318-4, -3dB)<br>
+                            8. With cable: Yes
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform translate-x-0 translate-y-0 group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span
+                                class="relative -2 -current px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP325.000
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/dynamicL/Moondrop MAY.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM BALANCE</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">Moondrop MAY</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            1. Fully Balanced HiFi<br>
+                            2. Driver: 10mm Sapphire Dynamic<br>
+                            3. Impedance: 300±15% (@1kHz)<br>
+                            4. Sensitivity: 120dB/Vrms(@1kHz)<br>
+                            5. THD: THD@1kHzs≤0.05%<br>
+                            6. Frequency: 7Hz-39kHz<br>
+                            7. Effective Frequency: 20Hz-20kHz<br>
+                            8. Earphone Jack: 0.78-2pin<br>
+                            9. Cable Plug: USB-C<br>
+                            10. With cable: Yes
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span class="relative px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP1.010.000
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/dynamicL/iBasso JR. GELATO.png"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM BALANCE</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">iBasso JR. GELATO</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            1. Drive unit: double-chamber dynamic driver<br>
+                            2. Dynamic driver technology: DMT 4 Ultra<br>
+                            3. Waveguide technology: Low-distortion waveguide cover technology<br>
+                            4. Total harmonic distortion (THD): 0.05% @1kHz 94dB<br>
+                            5. Impedance: 30 Ohm±10%<br>
+                            6. Sensitivity: 123 dB/Vrms<br>
+                            7. Frequency response range: 8-48 kHz<br>
+                            8. Wire specification: 0.78 2pin<br>
+                            9. With cable: Yes<br>
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span class="relative px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP319.000
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center items-center py-20 space-x-20"
+            style="background-color: rgb(89, 219, 213);">
+            <!-- Card 7 -->
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/dynamicL/CVJ Demon.png"
+                    class="absolute inset-0 h-full w-full object-cover opacity-79 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM DYNAMIC</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">CVJ Demon</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            1.Impedance: 22Ω 110dB/mW<br>
+                            2.Frequency range: 20-20000Hz<br>
+                            3.PlugType: 3.5mm L Plug<br>
+                            4.Cable Length: 1.25m<br>
+                            5.Color: Silver/Gold<br>
+                            6.Whether with cable: Yes<br>
+                            7.Earphone interface:2Pin Interface<br>
+                            8.Whether with mic:Optional<br>
+                            9.Whether can replacement cable: Yes<br>
+                            10.Driver unit:1DD Dynamic Monitors unit<br>
+                            11. With cable: Yes
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform translate-x-0 translate-y-0 group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span
+                                class="relative -2 -current px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP170.000
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/dynamicL/STA-Pro.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM BALANCE</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">STA-Pro</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            1. Driver: 10mm Dual-Magnetic Composite Diaphragm DD+6mm Composite Diaphragm DD Unit.<br>
+                            2. Impedance: 22Ω.<br>
+                            3. Sensitivity: 108dB.<br>
+                            4. Frequency Response Range: 10~30kHz.<br>
+                            5. Driver: 10mm Dual-Magnetic<br>
+                            6. Impedance: 18Ω.<br>
+                            7. Sensitivity: 113dB.<br>
+                            8. Frequency Response Range: 10~30kHz.<br>
+                            9. With cable: Yes
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span class="relative px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP725.000
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/dynamicL/Mezone HS-03.jpg"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM BALANCE</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">Mezone HS-03</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            Sensitivity: 98+/-3db / 1kHz<br>
+                            Impedance: 16 ohm<br>
+                            Frequency Response: 20Hz-20kHz<br>
+                            Drive Unit: 9mm + 9mm Dual Speaker<br>
+                            Plug Type: 3.5mm<br>
+                            Pin Type : 0.75mm<br>
+                            Features: Universal, In-Ear, Stereo, with Microphone<br>
+                            Cable Length: 1.2m (Approx.)<br>
+                            Cable: Detachable<br>
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span class="relative px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP289.000
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center items-center py-20 space-x-20"
+            style="background-color: rgb(89, 219, 213);">
+            <!-- Card 3 -->
+            <div class="relative w-[300px] h-[420px] bg-black overflow-hidden rounded-lg shadow-lg group">
+                <img alt="" src="logo/dynamicL/TruthEar x Crinacle Zero.png"
+                    class="absolute inset-0 h-full w-full object-cover opacity-79 transition-opacity duration-300 group-hover:opacity-50" />
+                <div class="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+                    <div>
+                        <p class="text-xs font-semibold tracking-wide text-black bold-500 uppercase">IEM DYNAMIC</p>
+                        <p class="text-lg font-bold text-white sm:text-xl">TruthEar x Crinacle Zero</p>
+                    </div>
+                    <div
+                        class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3">
+                        <p class="text-xs text-white">
+                            1. Diaphragm Material : PU + LCP composite diaphragm<br>
+                            2. THD : THD@1kHz≤1%<br>
+                            3. Sensitivity : 117.5dB/Vrms (@1kHz)<br>
+                            4. Impedance : 17.5Ω±15% (@1kHz)<br>
+                            5. Frequency Response : 20Hz - 40500Hz<br>
+                            6. Cable : Oxygen Free Silver Plated<br>
+                            7. With cable: Yes<br>
+                        </p>
+                        <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+                            <span
+                                class="absolute inset-0 bg-blue-300 transition-transform translate-x-0 translate-y-0 group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+                            <span
+                                class="relative -2 -current px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+                                RP880.000
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
