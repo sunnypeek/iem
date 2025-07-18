@@ -89,7 +89,6 @@
 <div class="flex justify-center items-center min-h-screen bg-gray-100">
   <div class="space-y-4 w-fit">
 
-    <!-- Komponen Type -->
     <details class="group relative overflow-hidden rounded border border-gray-300 shadow-sm">
       <summary class="flex items-center justify-between gap-2 p-3 text-gray-700 hover:text-gray-900 [&::-webkit-details-marker]:hidden">
         <span class="text-sm font-medium"> Type </span>
@@ -101,28 +100,28 @@
         </span>
       </summary>
 
- <div class="divide-y divide-gray-300 border-t border-gray-300" style="background-color: rgb(240, 245, 255);">
+      <div class="divide-y divide-gray-300 border-t border-gray-300" style="background-color: rgb(240, 245, 255);">
         <div class="flex items-center justify-between px-3 py-2">
-          <span class="text-sm text-gray-700"> 0 Selected </span>
-          <button type="button" class="text-sm text-gray-700 underline hover:text-gray-900">Reset</button>
+          <span class="text-sm text-gray-700" id="type-selected-count"> 0 Selected </span>
+          <button type="button" class="text-sm text-gray-700 underline hover:text-gray-900" id="reset-type">Reset</button>
         </div>
 
         <fieldset class="p-3">
           <div class="flex flex-col items-start gap-3">
             <label class="inline-flex items-center gap-3">
-              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm" />
-              <span class="text-sm font-medium text-gray-700"> Dyinamic </span>
+              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm type-checkbox" value="dynamic" />
+              <span class="text-sm font-medium text-gray-700"> Dynamic </span>
             </label>
             <label class="inline-flex items-center gap-3">
-              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm" />
+              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm type-checkbox" value="balance" />
               <span class="text-sm font-medium text-gray-700"> Balance </span>
             </label>
             <label class="inline-flex items-center gap-3">
-              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm" />
+              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm type-checkbox" value="hybrid" />
               <span class="text-sm font-medium text-gray-700"> Hybrid </span>
             </label>
             <label class="inline-flex items-center gap-3">
-              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm" />
+              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm type-checkbox" value="magnetic" />
               <span class="text-sm font-medium text-gray-700"> Magnetic </span>
             </label>
           </div>
@@ -130,7 +129,6 @@
       </div>
     </details>
 
-    <!-- Komponen Profile -->
     <details class="group relative overflow-hidden rounded border border-gray-300 shadow-sm">
       <summary class="flex items-center justify-between gap-2 p-3 text-gray-700 hover:text-gray-900 [&::-webkit-details-marker]:hidden">
         <span class="text-sm font-medium"> Profile </span>
@@ -142,27 +140,28 @@
         </span>
       </summary>
 
- <div class="divide-y divide-gray-300 border-t border-gray-300" style="background-color: rgb(240, 245, 255);">        <div class="flex items-center justify-between px-3 py-2">
-          <span class="text-sm text-gray-700"> 0 Selected </span>
-          <button type="button" class="text-sm text-gray-700 underline hover:text-gray-900">Reset</button>
+      <div class="divide-y divide-gray-300 border-t border-gray-300" style="background-color: rgb(240, 245, 255);">
+        <div class="flex items-center justify-between px-3 py-2">
+          <span class="text-sm text-gray-700" id="profile-selected-count"> 0 Selected </span>
+          <button type="button" class="text-sm text-gray-700 underline hover:text-gray-900" id="reset-profile">Reset</button>
         </div>
 
         <fieldset class="p-3">
           <div class="flex flex-col items-start gap-3">
             <label class="inline-flex items-center gap-3">
-              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm" />
+              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm profile-checkbox" value="bass" />
               <span class="text-sm font-medium text-gray-700"> Bass </span>
             </label>
             <label class="inline-flex items-center gap-3">
-              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm" />
-              <span class="text-sm font-medium text-gray-700"> Vocal  </span>
+              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm profile-checkbox" value="vocal" />
+              <span class="text-sm font-medium text-gray-700"> Vocal </span>
             </label>
             <label class="inline-flex items-center gap-3">
-              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm" />
+              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm profile-checkbox" value="trable" />
               <span class="text-sm font-medium text-gray-700"> Trable </span>
             </label>
             <label class="inline-flex items-center gap-3">
-              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm" />
+              <input type="checkbox" class="size-5 rounded border-gray-300 shadow-sm profile-checkbox" value="netral" />
               <span class="text-sm font-medium text-gray-700"> Netral </span>
             </label>
           </div>
@@ -171,7 +170,6 @@
     </details>
 
 
-    <!-- Impedance -->
     <details class="group border border-gray-300 rounded shadow-sm overflow-hidden">
       <summary class="flex items-center justify-between p-3 text-gray-700 hover:text-gray-900 [&::-webkit-details-marker]:hidden">
         <span class="text-sm font-medium">Impedance</span>
@@ -181,24 +179,24 @@
           </svg>
         </span>
       </summary>
- <div class="divide-y divide-gray-300 border-t border-gray-300" style="background-color: rgb(240, 245, 255);">        <div class="flex justify-between px-3 py-2">
+      <div class="divide-y divide-gray-300 border-t border-gray-300" style="background-color: rgb(240, 245, 255);">
+        <div class="flex justify-between px-3 py-2">
           <span class="text-sm text-gray-700">Max is 40</span>
-          <button class="text-sm text-gray-700 underline hover:text-gray-900">Reset</button>
+          <button class="text-sm text-gray-700 underline hover:text-gray-900" id="reset-impedance">Reset</button>
         </div>
         <div class="grid grid-cols-2 gap-3 p-3">
           <label class="text-sm text-gray-700">
             Min
-            <input type="number" value="0" class="w-full mt-1 rounded border-gray-300 shadow-sm sm:text-sm" />
+            <input type="number" id="min-impedance" value="0" class="w-full mt-1 rounded border-gray-300 shadow-sm sm:text-sm" />
           </label>
           <label class="text-sm text-gray-700">
             Max
-            <input type="number" value="600" class="w-full mt-1 rounded border-gray-300 shadow-sm sm:text-sm" />
+            <input type="number" id="max-impedance" value="600" class="w-full mt-1 rounded border-gray-300 shadow-sm sm:text-sm" />
           </label>
         </div>
       </div>
     </details>
 
-    <!-- Price -->
     <details class="group border border-gray-300 rounded shadow-sm overflow-hidden">
       <summary class="flex items-center justify-between p-3 text-gray-700 hover:text-gray-900 [&::-webkit-details-marker]:hidden">
         <span class="text-sm font-medium">Price</span>
@@ -208,33 +206,38 @@
           </svg>
         </span>
       </summary>
- <div class="divide-y divide-gray-300 border-t border-gray-300" style="background-color: rgb(240, 245, 255);">        <div class="flex justify-between px-3 py-2">
+      <div class="divide-y divide-gray-300 border-t border-gray-300" style="background-color: rgb(240, 245, 255);">
+        <div class="flex justify-between px-3 py-2">
           <span class="text-sm text-gray-700">Max price is 5.000.000</span>
-          <button class="text-sm text-gray-700 underline hover:text-gray-900">Reset</button>
+          <button class="text-sm text-gray-700 underline hover:text-gray-900" id="reset-price">Reset</button>
         </div>
         <div class="grid grid-cols-2 gap-3 p-3">
           <label class="text-sm text-gray-700">
             Min
-            <input type="number" value="0" class="w-full mt-1 rounded border-gray-300 shadow-sm sm:text-sm" />
+            <input type="number" id="min-price" value="0" class="w-full mt-1 rounded border-gray-300 shadow-sm sm:text-sm" />
           </label>
           <label class="text-sm text-gray-700">
             Max
-            <input type="number" value="600" class="w-full mt-1 rounded border-gray-300 shadow-sm sm:text-sm" />
+            <input type="number" id="max-price" value="6000000" class="w-full mt-1 rounded border-gray-300 shadow-sm sm:text-sm" />
           </label>
-
-
+        </div>
+      </div>
     </details>
-                            <a class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
-                            <span
-                                class="absolute inset-0 bg-blue-300 transition-transform group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
-                            <span class="relative px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
-                                CHECK
 
+    <button id="apply-filters-btn" class="relative inline-block focus:ring-3 focus:outline-none group/button" href="#">
+        <span class="absolute inset-0 bg-blue-300 transition-transform group-hover/button:translate-x-1.5 group-hover/button:translate-y-1.5"></span>
+        <span class="relative px-8 py-3 text-xs font-bold tracking-widest uppercase text-black">
+            APPLY FILTERS
+        </span>
+    </button>
   </div>
 </div>
 
+<div id="filtered-products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
+    </div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
+<script src="filter.js"></script>
 </body>
 
 </html>

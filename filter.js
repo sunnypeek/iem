@@ -1,4 +1,4 @@
-[
+const products = [
     {
         "name": "TRN BA15 15",
         "type": "balance",
@@ -677,4 +677,233 @@
             "With cable: Yes"
         ]
     }
-]
+];
+
+/**
+ * Mengubah string harga "RPX.XXX.XXX" menjadi nilai numerik.
+ * @param {string} priceString - String harga (contoh: "RP2.500.000").
+ * @returns {number} Nilai harga dalam bentuk angka.
+ */
+function parsePrice(priceString) {
+    if (!priceString) return null;
+    return parseInt(priceString.replace(/RP|\./g, ''));
+}
+
+/**
+ * Melakukan filtering produk berdasarkan kriteria yang diberikan.
+ * @param {Array<Object>} products - Array objek produk.
+ * @param {Object} filters - Objek yang berisi kriteria filter.
+ * @param {string[]} [filters.type] - Array tipe produk yang diinginkan (contoh: ["balance", "dynamic"]). Opsional.
+ * @param {string[]} [filters.profile] - Array profil suara produk yang diinginkan (contoh: ["bass", "netral"]). Opsional.
+ * @param {number} [filters.minImpedance] - Impedansi minimum yang diinginkan. Opsional.
+ * @param {number} [filters.maxImpedance] - Impedansi maksimum yang diinginkan. Opsional.
+ * @param {number} [filters.minPrice] - Harga minimum yang diinginkan (dalam Rupiah, tanpa "RP" atau titik). Opsional.
+ * @param {number} [filters.maxPrice] - Harga maksimum yang diinginkan (dalam Rupiah, tanpa "RP" atau titik). Opsional.
+ * @returns {Array<Object>} Array produk yang cocok dengan kriteria filter.
+ */
+function filterProducts(products, filters) {
+    // Normalisasi harga untuk semua produk agar bisa dibandingkan
+    const normalizedProducts = products.map(product => ({
+        ...product,
+        numericPrice: parsePrice(product.price)
+    }));
+
+    return normalizedProducts.filter(product => {
+        // Filter berdasarkan tipe (jika ada multiple pilihan)
+        if (filters.type && filters.type.length > 0 && !filters.type.includes(product.type)) {
+            return false;
+        }
+
+        // Filter berdasarkan profil (jika ada multiple pilihan)
+        if (filters.profile && filters.profile.length > 0 && !filters.profile.includes(product.profile)) {
+            return false;
+        }
+
+        // Filter berdasarkan impedansi (rentang)
+        if (filters.minImpedance !== undefined && product.impedance < filters.minImpedance) {
+            return false;
+        }
+        if (filters.maxImpedance !== undefined && product.impedance > filters.maxImpedance) {
+            return false;
+        }
+
+        // Filter berdasarkan harga (rentang)
+        if (filters.minPrice !== undefined && product.numericPrice < filters.minPrice) {
+            return false;
+        }
+        if (filters.maxPrice !== undefined && product.numericPrice > filters.maxPrice) {
+            return false;
+        }
+
+        return true; // Jika semua filter cocok, kembalikan produk ini
+    });
+}
+
+/**
+ * Merender produk ke dalam HTML.
+ * @param {Array<Object>} productsToDisplay - Array produk yang akan ditampilkan.
+ */
+function renderProducts(productsToDisplay) {
+    const container = document.getElementById('filtered-products-container');
+    container.innerHTML = ''; // Bersihkan kontainer sebelum merender yang baru
+
+    if (productsToDisplay.length === 0) {
+        container.innerHTML = '<p class="text-center text-gray-700 col-span-full">Tidak ada produk yang cocok dengan filter Anda.</p>';
+        return;
+    }
+
+    productsToDisplay.forEach(product => {
+        const productCard = `
+            <div class="block rounded-lg p-4 shadow-sm shadow-indigo-100" style="background-color: rgb(255, 255, 255);">
+                <img
+                    alt="${product.name}"
+                    src="${product.image}"
+                    class="h-56 w-full rounded-md object-cover"
+                />
+
+                <div class="mt-2">
+                    <dl>
+                        <div>
+                            <dt class="sr-only">Harga</dt>
+                            <dd class="text-sm text-gray-500">${product.price}</dd>
+                        </div>
+
+                        <div>
+                            <dt class="sr-only">Nama</dt>
+                            <dd class="font-medium">${product.name}</dd>
+                        </div>
+                        <div>
+                            <dt class="sr-only">Tipe</dt>
+                            <dd class="text-xs text-gray-700">Tipe: ${product.type}</dd>
+                        </div>
+                        <div>
+                            <dt class="sr-only">Profil</dt>
+                            <dd class="text-xs text-gray-700">Profil: ${product.profile}</dd>
+                        </div>
+                        <div>
+                            <dt class="sr-only">Impedansi</dt>
+                            <dd class="text-xs text-gray-700">Impedansi: ${product.impedance}Ω</dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="mt-4 text-center">
+                    <a href="${product.link}" target="_blank" rel="noopener noreferrer" 
+                       class="inline-block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700">
+                        ${product.price}
+                    </a>
+                </div>
+            </div>
+        `;
+        container.innerHTML += productCard;
+    });
+}
+
+/**
+ * Mengambil nilai filter dari inputan pengguna.
+ * @returns {Object} Objek filter yang siap digunakan oleh fungsi filterProducts.
+ */
+function getFiltersFromInputs() {
+    const filters = {};
+
+    // Ambil nilai dari checkbox tipe
+    const selectedTypes = Array.from(document.querySelectorAll('.type-checkbox:checked'))
+        .map(checkbox => checkbox.value);
+    if (selectedTypes.length > 0) {
+        filters.type = selectedTypes;
+    }
+
+    // Ambil nilai dari checkbox profil
+    const selectedProfiles = Array.from(document.querySelectorAll('.profile-checkbox:checked'))
+        .map(checkbox => checkbox.value);
+    if (selectedProfiles.length > 0) {
+        filters.profile = selectedProfiles;
+    }
+
+    // Ambil nilai impedansi
+    const minImpedanceInput = document.getElementById('min-impedance');
+    const maxImpedanceInput = document.getElementById('max-impedance');
+    if (minImpedanceInput && minImpedanceInput.value !== "") {
+        filters.minImpedance = parseInt(minImpedanceInput.value);
+    }
+    if (maxImpedanceInput && maxImpedanceInput.value !== "") {
+        filters.maxImpedance = parseInt(maxImpedanceInput.value);
+    }
+
+    // Ambil nilai harga
+    const minPriceInput = document.getElementById('min-price');
+    const maxPriceInput = document.getElementById('max-price');
+    if (minPriceInput && minPriceInput.value !== "") {
+        filters.minPrice = parseInt(minPriceInput.value);
+    }
+    if (maxPriceInput && maxPriceInput.value !== "") {
+        filters.maxPrice = parseInt(maxPriceInput.value);
+    }
+
+    return filters;
+}
+
+/**
+ * Memperbarui hitungan item yang dipilih untuk checkbox.
+ * @param {string} checkboxClass - Kelas CSS dari checkbox yang akan dihitung.
+ * @param {string} countElementId - ID elemen HTML tempat hitungan akan ditampilkan.
+ */
+function updateCheckboxCount(checkboxClass, countElementId) {
+  const checkboxes = document.querySelectorAll(`.${checkboxClass}`);
+  const checkedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
+  document.getElementById(countElementId).textContent = `${checkedCount} Selected`;
+}
+
+// --- Event Listeners ---
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Event listener untuk menu mobile
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    // Event listener untuk tombol APPLY FILTERS
+    const applyFiltersBtn = document.getElementById('apply-filters-btn');
+    if (applyFiltersBtn) {
+        applyFiltersBtn.addEventListener('click', () => {
+            const currentFilters = getFiltersFromInputs();
+            const filteredProducts = filterProducts(products, currentFilters);
+            renderProducts(filteredProducts);
+        });
+    }
+
+    // Event listeners untuk update hitungan checkbox
+    document.querySelectorAll('.type-checkbox').forEach(checkbox => {
+        checkbox.addEventListener('change', () => updateCheckboxCount('type-checkbox', 'type-selected-count'));
+    });
+    document.querySelectorAll('.profile-checkbox').forEach(checkbox => {
+        checkbox.addEventListener('change', () => updateCheckboxCount('profile-checkbox', 'profile-selected-count'));
+    });
+
+    // Event listeners untuk tombol Reset
+    document.getElementById('reset-type').addEventListener('click', () => {
+        document.querySelectorAll('.type-checkbox').forEach(cb => cb.checked = false);
+        updateCheckboxCount('type-checkbox', 'type-selected-count');
+    });
+    document.getElementById('reset-profile').addEventListener('click', () => {
+        document.querySelectorAll('.profile-checkbox').forEach(cb => cb.checked = false);
+        updateCheckboxCount('profile-checkbox', 'profile-selected-count');
+    });
+    document.getElementById('reset-impedance').addEventListener('click', () => {
+        document.getElementById('min-impedance').value = '0';
+        document.getElementById('max-impedance').value = '600'; // Sesuaikan dengan nilai default atau maksimum yang relevan
+    });
+    document.getElementById('reset-price').addEventListener('click', () => {
+        document.getElementById('min-price').value = '0';
+        document.getElementById('max-price').value = '6000000'; // Sesuaikan dengan nilai default atau maksimum yang relevan
+    });
+
+
+    // Inisialisasi: Tampilkan semua produk saat halaman pertama kali dimuat
+    renderProducts(products);
+    updateCheckboxCount('type-checkbox', 'type-selected-count');
+    updateCheckboxCount('profile-checkbox', 'profile-selected-count');
+});

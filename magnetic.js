@@ -23,7 +23,7 @@ fetch("data/iem.json")
           </div>
           <div class="transition-all duration-300 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 space-y-3 overflow-y-auto text-xs text-white">
             ${item.specs.map((spec, i) => `${i + 1}. ${spec}`).join("<br/>")}
-            <a class="relative inline-block mt-2" href="#">
+            <a class="relative inline-block mt-2" href="${item.link}">
               <span class="absolute inset-0 bg-blue-300 transition-transform group-hover:translate-x-1.5 group-hover:translate-y-1.5"></span>
               <span class="relative px-8 py-2 text-xs font-bold tracking-widest uppercase text-black bg-white">
                 ${item.price}
